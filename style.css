@@ -1,0 +1,53 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+p {
+    font-family: 'Open Sans', sans-serif;
+}
+
+body {
+  height: 100vh;
+}
+
+header {
+  width: 100%;
+  text-align: center;
+  border-bottom: 1px solid rgb(221, 221, 221);
+}
+
+header .menubox {
+  position: absolute;
+  left: 3.5px;
+  top: 3.5px;
+  background-color: #ffffff;
+  width: 30px;
+  height: 30px;
+}
+
+header .menubox div {
+  margin: 4px 5px;
+  width: 20px;
+  height: 4px;
+  background-color: black;
+  border-radius: 5px;
+}
+
+main section article {
+    margin: 15px 15px 0;  
+    padding: 0 0 10px; 
+   border-bottom: 2px solid rgb(0, 0, 0);
+}
+
+main section article h2, p, img {
+    margin: 10px 0;
+    display: block;
+}
+
+main section article img {
+  max-width: 100%;
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+}
