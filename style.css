@@ -8,10 +8,13 @@ p {
 }
 
 body {
-  height: 100vh;
+  height: 100%;
 }
 
 header {
+  background-color: white;
+  position: sticky;
+  top: 0;
   width: 100%;
   text-align: center;
   border-bottom: 1px solid rgb(221, 221, 221);
@@ -35,14 +38,15 @@ header .menubox div {
 }
 
 nav {
+  position: fixed;
   font-family: "Open Sans", sans-serif;
   font-weight: 600;
   width: 100%;
-  height: 100%;
-  position: absolute;
+  height: 100vh;
   z-index: 1000;
   display: none;
   background-color: white;
+  overflow-y: auto;
 }
 
 nav ul {
@@ -71,7 +75,7 @@ nav ul li {
 
 main section article {
   margin: 15px 15px 0;
-  padding: 0 0 10px;
+  padding: 0 0 5px;
   border-bottom: 2px solid rgb(0, 0, 0);
 }
 
@@ -82,6 +86,7 @@ main section article:last-child {
 main section article h2,
 p,
 img {
+  line-height: 1;
   margin: 10px 0;
   display: block;
 }
@@ -92,4 +97,27 @@ main section article img {
   max-height: 100%;
   height: 100%;
   object-fit: cover;
+}
+
+@media screen and (min-width: 530px) {
+  main section article {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: 'text imagen';
+    padding-bottom: 15px;
+  }
+  main section article h2 {
+    margin-top: 0;
+  }
+  main section article p:last-child {
+    margin-bottom: 0;
+  }
+  main section article img {
+    grid-area: imagen;
+    margin: 0;
+  }
+  main section article div {
+    grid-area: text;
+  }
 }
