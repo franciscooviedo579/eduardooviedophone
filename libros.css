@@ -98,3 +98,36 @@ header h1 a {
 .rel-arg-eeuu-ul li {
   padding: 12.5px 15px 12.5px 30px;
 }
+
+main section article {
+  margin: 15px 15px 0 15px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid rgb(221, 221, 221);
+}
+
+main section article h2 {
+  margin: 10px 0;
+}
+
+main section article img {
+  max-width: 40%;
+  display: block;
+}
+
+main section article:nth-child(odd) img {
+  float: left;
+  margin: 0px 10px 10px 0;
+}
+
+main section article:nth-child(even) img {
+  float: right;
+  margin: 0px 0px 10px 10px;
+}
+
+main section article p {
+  margin: 10px 0;
+}
+
+main section article p:last-child {
+  margin-bottom: 0;
+}
