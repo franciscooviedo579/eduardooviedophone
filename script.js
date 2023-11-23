@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", () => {
   const menubox = document.querySelector(".menubox");
-  const nav = document.querySelector("nav");
+  const nav = document.querySelector(".lat-nav");
   const politInt = document.querySelector(".polit-int");
   const politArg = document.querySelector(".polit-arg");
   const politChi = document.querySelector(".polit-chi");
