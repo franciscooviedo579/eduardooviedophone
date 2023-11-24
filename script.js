@@ -1,6 +1,7 @@
 document.addEventListener("DOMContentLoaded", () => {
   const menubox = document.querySelector(".menubox");
   const nav = document.querySelector(".lat-nav");
+  const main = document.querySelector("main");
   const politInt = document.querySelector(".polit-int");
   const politArg = document.querySelector(".polit-arg");
   const politChi = document.querySelector(".polit-chi");
@@ -16,8 +17,10 @@ document.addEventListener("DOMContentLoaded", () => {
   menubox.addEventListener("click", () => {
     if (nav.style.display === "block") {
       nav.style.display = "none";
+      main.style.display = "block";
     } else {
       nav.style.display = "block";
+      main.style.display = "none";
     }
   });
 
